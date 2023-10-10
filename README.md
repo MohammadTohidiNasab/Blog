@@ -59,7 +59,7 @@ Before starting :checkered_flag:, you need to have Git and python installed.
 $ git clone https://github.com/MohammadTohidiNasab/Blog
 
 # Access
-$ cd onlineshop
+$ cd Blog
 
 # Install requirments.txt
 $ pip install -r requirments.txt
