@@ -43,7 +43,6 @@ The following tools were used in this project:
 
 - Python
 - Django
-- Zarinpal
 - html css
 - Jinja2
 - docker
