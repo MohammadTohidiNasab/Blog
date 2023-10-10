@@ -1,12 +1,12 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="OnlineShop" />
+  <img src="./.github/app.gif" alt="Blog" />
 
   &#xa0;
 
-  <!-- <a href="https://onlineshop.netlify.app">Demo</a> -->
+  <!-- <a href="https://Blog.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">OnlineShop</h1>
+<h1 align="center">Blog</h1>
 
 
 </p>
@@ -14,7 +14,7 @@
 <!-- Status -->
 
 <!-- <h4 align="center"> 
-	🚧  OnlineShop 🚀 Under construction...  🚧
+	🚧  Blog 🚀 Under construction...  🚧
 </h4> 
 
 <hr> -->
@@ -34,9 +34,8 @@
 A website for the article 
 ## :sparkles: Features ##
 
-:heavy_check_mark: customize user , otp sms \
-:heavy_check_mark: discount coupon \
-:heavy_check_mark: Zarin Pal payment gateway, Arvan Cloud's cloud space  
+:heavy_check_mark: apis for crud posts and forms for crud \
+  
 
 ## :rocket: Technologies ##
 
@@ -48,9 +47,7 @@ The following tools were used in this project:
 - html css
 - Jinja2
 - docker
-- arvan clode
-- sms otp sign up
-
+- djangorestframework
 ## :white_check_mark: Requirements ##
 
 Before starting :checkered_flag:, you need to have Git and python installed.
@@ -59,7 +56,7 @@ Before starting :checkered_flag:, you need to have Git and python installed.
 
 ```bash
 # Clone this project
-$ git clone https://github.com/MohammadTohidiNasab/OnlineShop
+$ git clone https://github.com/MohammadTohidiNasab/Blog
 
 # Access
 $ cd onlineshop
