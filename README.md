@@ -34,7 +34,7 @@
 A website for the article 
 ## :sparkles: Features ##
 
-:heavy_check_mark: apis for crud posts and forms for crud \
+:heavy_check_mark: APIs for crud posts and forms for crud
   
 
 ## :rocket: Technologies ##
