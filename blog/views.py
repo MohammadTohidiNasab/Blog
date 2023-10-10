@@ -70,7 +70,9 @@ def category_page(request):
 #api views
 
 class AllArticleApiViews(APIView):
-
+    '''
+    all of atricles sort by time
+    '''
     def get(self, request, format = None):
         try:
             all_articles = Article.objects.all().order_by('-created_at')[:10]

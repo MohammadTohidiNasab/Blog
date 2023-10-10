@@ -1,0 +1,80 @@
+swagger: '2.0'
+info:
+  title: Snippets API
+  description: Test description
+  termsOfService: https://www.google.com/policies/terms/
+  contact:
+    email: contact@snippets.local
+  license:
+    name: BSD License
+  version: v1
+host: 127.0.0.1:8000
+schemes:
+- http
+basePath: /
+consumes:
+- application/json
+produces:
+- application/json
+securityDefinitions:
+  Basic:
+    type: basic
+security:
+- Basic: []
+paths:
+  /article/:
+    get:
+      operationId: article_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      tags:
+      - article
+    parameters: []
+  /article/all:
+    get:
+      operationId: article_all_list
+      description: all of atricles sort by time
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      tags:
+      - article
+    parameters: []
+  /article/create/:
+    post:
+      operationId: article_create_create
+      description: ''
+      parameters: []
+      responses:
+        '201':
+          description: ''
+      tags:
+      - article
+    parameters: []
+  /article/delete/:
+    post:
+      operationId: article_delete_create
+      description: ''
+      parameters: []
+      responses:
+        '201':
+          description: ''
+      tags:
+      - article
+    parameters: []
+  /article/search/:
+    get:
+      operationId: article_search_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      tags:
+      - article
+    parameters: []
+definitions: {}
