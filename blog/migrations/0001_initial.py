@@ -8,7 +8,6 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -17,33 +16,92 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Category',
+            name="Category",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=128)),
-                ('cover', models.FileField(upload_to='files/category_cover/', validators=[blog.models.validate_file_extension])),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=128)),
+                (
+                    "cover",
+                    models.FileField(
+                        upload_to="files/category_cover/",
+                        validators=[blog.models.validate_file_extension],
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='UserProfile',
+            name="UserProfile",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('avatar', models.FileField(upload_to='files/user_avatar/', validators=[blog.models.validate_file_extension])),
-                ('description', models.CharField(max_length=512)),
-                ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "avatar",
+                    models.FileField(
+                        upload_to="files/user_avatar/",
+                        validators=[blog.models.validate_file_extension],
+                    ),
+                ),
+                ("description", models.CharField(max_length=512)),
+                (
+                    "user",
+                    models.OneToOneField(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='Article',
+            name="Article",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=128)),
-                ('cover', models.FileField(upload_to='files/article_cover/', validators=[blog.models.validate_file_extension])),
-                ('content', models.TextField()),
-                ('created_at', models.DateTimeField(default=datetime.datetime.now)),
-                ('promote', models.BooleanField(default=False)),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='blog.userprofile')),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='blog.category')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=128)),
+                (
+                    "cover",
+                    models.FileField(
+                        upload_to="files/article_cover/",
+                        validators=[blog.models.validate_file_extension],
+                    ),
+                ),
+                ("content", models.TextField()),
+                ("created_at", models.DateTimeField(default=datetime.datetime.now)),
+                ("promote", models.BooleanField(default=False)),
+                (
+                    "author",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="blog.userprofile",
+                    ),
+                ),
+                (
+                    "category",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="blog.category"
+                    ),
+                ),
             ],
         ),
     ]
